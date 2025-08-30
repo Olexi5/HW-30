@@ -1,0 +1,31 @@
+.box{
+    width: 100px;
+    height: 100px;
+background-color: aqua;
+animation: move 5s linear 0s infinite normal none ;
+}
+.box:hover{
+    animation-play-state: paused;
+}
+@keyframes move{
+    0%{
+        transform: translate(0%, 0%);
+        background-color: red;
+    }
+    25%{
+        transform: translate(0%, 300%);
+        background-color: yellow;
+    }
+    50%{
+        transform: translate(300%, 300%);
+        background-color: green;
+    }
+    75%{
+        transform: translate(300%, 0%);
+        background-color: blue;
+    }
+    100%{
+        transform: translate(0%, 0%);
+        background-color: red;
+    }
+}
